@@ -1,21 +1,17 @@
 test_square (__main__.TestExercice) ... ok
-test_square_root (__main__.TestExercice) ... FAIL
+test_square_root (__main__.TestExercice) ... ERROR
 
 ======================================================================
-FAIL: test_square_root (__main__.TestExercice)
+ERROR: test_square_root (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_exercice.py", line 33, in test_square_root
-    'Failed to calculate square roots'
-AssertionError: Lists differ: [(1, 5), (1, 5), (1, 5), (1, 5), (1, 5), ([753 chars], 5)] != [0.0, 1.0, 1.4142135623730951, 1.732050807[1699 chars]0662]
-
-First differing element 0:
-(1, 5)
-0.0
-
-Diff is 3146 characters long. Set self.maxDiff to None to see it. : Failed to calculate square roots
+  File "test_exercice.py", line 27, in test_square_root
+    output_exo = list(map(exercice.square_root, self.numbers))
+  File "/home/runner/work/c01_ch3_exercice1-totyrola/c01_ch3_exercice1-totyrola/exercice.py", line 7, in square_root
+    return math.sqrt ()
+TypeError: sqrt() takes exactly one argument (0 given)
 
 ----------------------------------------------------------------------
-Ran 2 tests in 0.013s
+Ran 2 tests in 0.001s
 
-FAILED (failures=1)
+FAILED (errors=1)
