@@ -22,6 +22,6 @@ Traceback (most recent call last):
 NameError: name 'math' is not defined
 
 ----------------------------------------------------------------------
-Ran 2 tests in 0.000s
+Ran 2 tests in 0.001s
 
 FAILED (errors=2)
